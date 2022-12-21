@@ -12,8 +12,8 @@ import {
    StarIcon 
 } from "@heroicons/react/24/outline"
 import { Fragment } from "react"
-import brodsky from '../brodsky.png'
-import logo from '../bear.png'
+import brodsky from '../pages/brodsky.png'
+import logo from '../pages/bear.png'
 import Image from "next/image";
 
 const aboutQuests = [

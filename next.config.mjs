@@ -10,10 +10,10 @@ const isProd = process.env.NODE_ENV === 'production'
 const config = {
   reactStrictMode: true,
   swcMinify: true,
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+//   i18n: {
+//     locales: ["en"],
+//     defaultLocale: "en",
+//   },
   assetPrefix: isProd ? '/chat-bot/' : '',
   images: {
     unoptimized: true,

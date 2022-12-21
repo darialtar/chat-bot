@@ -5,7 +5,7 @@ import Link from "next/link";
 import { trpc } from "../utils/trpc";
 import Image from "next/image";
 
-import { Nav } from "./components/nav";
+import { Nav } from "../components/nav";
 
 
 
