@@ -44,7 +44,7 @@ const resources = [
    {
       name: 'Пройти бесплатный квест',
       description: 'Познакомитесь с чат-ботом и интерфейсом прохождения квестов',
-      href: '../freeQuest/',
+      href: '/chat-bot/freeQuest',
       icon: StarIcon,
    },
    {

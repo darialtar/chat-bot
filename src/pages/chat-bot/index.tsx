@@ -2,10 +2,10 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 
-import { trpc } from "../utils/trpc";
+import { trpc } from "../../utils/trpc";
 import Image from "next/image";
 
-import { Nav } from "../components/nav";
+import { Nav } from "../../components/nav";
 
 
 
