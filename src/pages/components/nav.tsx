@@ -20,7 +20,7 @@ const aboutQuests = [
    {
       name: 'О городских квестах',
       description: 'Выясните, что же такое городские квесты и чем они отличаются от привычных эскейп-румов',
-      href: '#',
+      href: '/',
       icon: BuildingOffice2Icon,
    },
    {
@@ -44,7 +44,7 @@ const resources = [
    {
       name: 'Пройти бесплатный квест',
       description: 'Познакомитесь с чат-ботом и интерфейсом прохождения квестов',
-      href: '#',
+      href: '../freeQuest/',
       icon: StarIcon,
    },
    {
