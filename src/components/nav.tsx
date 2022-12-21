@@ -20,7 +20,7 @@ const aboutQuests = [
    {
       name: 'О городских квестах',
       description: 'Выясните, что же такое городские квесты и чем они отличаются от привычных эскейп-румов',
-      href: '/',
+      href: '/chat-bot',
       icon: BuildingOffice2Icon,
    },
    {
