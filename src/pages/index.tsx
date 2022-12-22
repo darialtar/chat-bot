@@ -21,7 +21,7 @@ const Home = () => {
             <div className="relative px-6 lg:px-8">
                <div className="mx-auto max-w-4xl pt-4 pb-2 sm:pt-8 sm:pb-4">
                   <div>
-                     <div>
+                     <div> 
                         <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                            que[ST]eps - городские квесты в Ярославле
                         </h1>
