@@ -69,7 +69,7 @@ export const Nav = () => {
       <div>
       <div className="h-banner w-full h-full font-bold text-white bg-gradient-to-t from-seventh-darkblue/70 to-seventh-darkblue pointer-events-auto top-0 z-40 overflow-y-hidden">
       <div className="w-full p-2 h-full flex items-center justify-center">
-         <span className="pr-4">Не слушай Бродского - выходи из комнаты</span>
+         <span className="pr-4 text-sm sm:text-base">Не слушай Бродского - выходи из комнаты</span>
          <a href="">
             <Image alt="Недовольный Бродский" src={brodsky} className="" width={70} />
          </a>
@@ -218,7 +218,7 @@ export const Nav = () => {
                <div className="-my-2 -mr-2 md:hidden">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                      <span className="sr-only">Open menu</span>
-                     <span className="h-6 w-6 text-3xl" aria-hidden="true">&#127969;</span>
+                     <span className="h-6 w-9 text-3xl" aria-hidden="true">&#127969;</span>
                   </Popover.Button>
                </div>
             </div>
