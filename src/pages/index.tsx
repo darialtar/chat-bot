@@ -80,7 +80,7 @@ const Home = () => {
                         </svg>
                      </div>
                      <div className="hidden sm:flex sm:justify-center mt-6">
-                        <div className="relative overflow-hidden border-dotted border-2 border-l-fifth-red py-1 px-4 text-base leading-6">
+                        <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-1 px-4 text-base leading-6">
                            <a href="#" className="font-semibold text-indigo-600">
                               <span className="text-gray-600">
                                  Ещё больше мишек! { } 🧸
