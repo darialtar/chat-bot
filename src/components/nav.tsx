@@ -67,7 +67,7 @@ function classNames(...classes: any[]) {
 export const Nav = () => {
    return (
       <div>
-      <div className="h-banner w-full h-full font-bold text-white bg-fifth-red pointer-events-auto top-0 z-40 overflow-y-hidden">
+      <div className="h-banner w-full h-full font-bold text-white bg-gradient-to-t from-seventh-darkblue/70 to-seventh-darkblue pointer-events-auto top-0 z-40 overflow-y-hidden">
       <div className="w-full p-2 h-full flex items-center justify-center">
          <span className="pr-4">Не слушай Бродского - выходи из комнаты</span>
          <a href="">
@@ -88,19 +88,14 @@ export const Nav = () => {
                      {({ open }) => (
                         <>
                            <Popover.Button
+                              
                               className={classNames(
-                                 open ? 'text-gray-900' : 'text-gray-500',
-                                 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-                              )}
+                                 open ? 'text-gray-900' : 'text-black',
+                                 'group inline-flex items-center rounded-md bg-white text-base font-medium focus:outline-none hover:text-seventh-darkblue'
+                              )} 
                            >
-                              <span>О квестах</span>
-                              <ChevronDownIcon
-                                 className={classNames(
-                                    open ? 'text-gray-600' : 'text-gray-400',
-                                    'ml-2 h-5 w-5 group-hover:text-gray-500'
-                                 )}
-                                 aria-hidden="true"
-                              />
+                              <span className="">О квестах</span>
+                              <span className="hover:rotate-180 rotatable ml-1 h-6 w-5">🌲</span>
                            </Popover.Button>
 
                            <Transition
@@ -111,6 +106,7 @@ export const Nav = () => {
                               leave="transition ease-in duration-150"
                               leaveFrom="opacity-100 translate-y-0"
                               leaveTo="opacity-0 translate-y-1"
+                              
                            >
                               <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                                  <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
@@ -119,12 +115,12 @@ export const Nav = () => {
                                           <a
                                              key={item.name}
                                              href={item.href}
-                                             className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                                             className="-m-3 flex items-start rounded-lg p-3 hover:bg-fifth-red"
                                           >
                                              <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                                              <div className="ml-4">
-                                                <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                                <p className="text-base font-medium text-black">{item.name}</p>
+                                                <p className="mt-1 text-sm text-black">{item.description}</p>
                                              </div>
                                           </a>
                                        ))}
@@ -149,7 +145,7 @@ export const Nav = () => {
                      )}
                   </Popover>
 
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  <a href="#" className="text-base font-medium text-black hover:text-seventh-darkblue">
                      Купить квест
                   </a>
 
@@ -158,18 +154,12 @@ export const Nav = () => {
                         <>
                            <Popover.Button
                               className={classNames(
-                                 open ? 'text-gray-900' : 'text-gray-500',
-                                 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-                              )}
+                                 open ? 'text-gray-900' : 'text-black',
+                                 'group inline-flex items-center rounded-md bg-white text-base font-medium focus:outline-none hover:text-seventh-darkblue'
+                              )} 
                            >
-                              <span>Пройти квест</span>
-                              <ChevronDownIcon
-                                 className={classNames(
-                                    open ? 'text-gray-600' : 'text-gray-400',
-                                    'ml-2 h-5 w-5 group-hover:text-gray-500'
-                                 )}
-                                 aria-hidden="true"
-                              />
+                              <span className="">Пройти квест</span>
+                              <span className="hover:rotate-180 rotatable stayrotate ml-0.5 h-6 w-5">🌲</span>
                            </Popover.Button>
 
                            <Transition
