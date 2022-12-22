@@ -95,7 +95,7 @@ export const Nav = () => {
                               )} 
                            >
                               <span className="">О квестах</span>
-                              <span className="hover:rotate-180 rotatable ml-1 h-6 w-5">🌲</span>
+                              <span className="transition ease-in-out delay-100 hover:rotate-180 duration-200 rotatable ml-1 h-6 w-5">🌲</span>
                            </Popover.Button>
 
                            <Transition
@@ -159,7 +159,7 @@ export const Nav = () => {
                               )} 
                            >
                               <span className="">Пройти квест</span>
-                              <span className="hover:rotate-180 rotatable stayrotate ml-0.5 h-6 w-5">🌲</span>
+                              <span className="transition ease-in-out delay-100 hover:rotate-180 duration-200 rotatable stayrotate ml-0.5 h-6 w-5">🌲</span>
                            </Popover.Button>
 
                            <Transition
