@@ -109,8 +109,8 @@ export const Nav = () => {
                                  leaveTo="opacity-0 translate-y-1"
 
                               >
-                                 <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                                 <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 border-none">
+                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 border-none">
                                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                           {aboutQuests.map((item) => (
                                              <a
