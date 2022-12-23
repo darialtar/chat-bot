@@ -26,18 +26,22 @@ const aboutQuests = [
    {
       name: 'Маршруты и цены',
       description: 'Определитесь, какой квест вам больше всего подходит',
-      href: '#',
+      href: '/chat-bot/routesAndPrices',
       icon: MapIcon,
    },
    {
       name: 'Отзывы',
       description: "Ознакомитесь с отзывами клиентов, уже прошедших различные квесты",
-      href: '#',
+      href: '/chat-bot/reviews',
       icon: ChatBubbleBottomCenterTextIcon,
    },
 ]
 const callsToAction = [
-   { name: 'Почему вы обижаете Бродского?', href: '#', icon: QuestionMarkCircleIcon },
+   { 
+      name: 'Почему вы обижаете Бродского?', 
+      href: '/chat-bot/brodsky', 
+      icon: QuestionMarkCircleIcon 
+   },
 ]
 const resources = [
    {
@@ -49,14 +53,14 @@ const resources = [
    {
       name: 'Пройти купленный квест',
       description: 'Окунитесь в мир увелкательных и познавательных прогулок по Ярославлю',
-      href: '#',
+      href: '/chat-bot/payedQuest',
       icon: SparklesIcon,
    },
 ]
 const update = [
-   { id: 1, name: 'Озвучка всех квестов', href: '#' },
-   { id: 2, name: 'Новый Хард-Квест-2', href: '#' },
-   { id: 3, name: 'Новый Freedom-Квест', href: '#' },
+   { id: 1, name: 'Озвучка всех квестов', href: '/chat-bot/voicing' },
+   { id: 2, name: 'Новый Хард-Квест-2', href: '/chat-bot/hardQuest2' },
+   { id: 3, name: 'Новый Freedom-Квест', href: '/chat-bot/freedomQuest' },
 ]
 
 function classNames(...classes: any[]) {
@@ -69,7 +73,7 @@ export const Nav = () => {
          <div className="h-banner w-full h-full font-bold text-white bg-gradient-to-t from-seventh-darkblue/70 to-seventh-darkblue pointer-events-auto top-0 z-40 overflow-y-hidden">
             <div className="w-full p-2 h-full flex items-center justify-center">
                <span className="pr-4 text-sm sm:text-base">Не слушай Бродского - выходи из комнаты</span>
-               <a href="">
+               <a href="/chat-bot/brodsky">
                   <Image alt="Недовольный Бродский" src={brodsky} className="" width={70} />
                </a>
             </div>
@@ -78,7 +82,7 @@ export const Nav = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                <div className="flex justify-between items-center py-1 border-b-2 border-black md:space-x-10">
                   <div className="flex justify-start">
-                     <a href="#">
+                     <a href="/chat-bot">
                         <Image alt="Рычащий мишка" src={logo} className="" width={80} />
                      </a>
                   </div>
@@ -114,7 +118,7 @@ export const Nav = () => {
                                              <a
                                                 key={item.name}
                                                 href={item.href}
-                                                className="-m-3 flex items-start rounded-lg p-3 hover:bg-fifth-red"
+                                                className="-m-3 flex items-start rounded-lg p-3"
                                              >
                                                 <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                                                 <div className="ml-4">
@@ -144,7 +148,7 @@ export const Nav = () => {
                         )}
                      </Popover>
 
-                     <a href="#" className="text-base font-medium text-black hover:text-seventh-darkblue">
+                     <a href="/chat-bot/buyQuest" className="text-base font-medium text-black hover:text-seventh-darkblue">
                         Купить квест
                      </a>
 
@@ -208,7 +212,7 @@ export const Nav = () => {
                         )}
                      </Popover>
 
-                     <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                     <a href="/chat-bot/bears" className="text-base font-medium text-gray-500 hover:text-gray-900">
                         🧸
                      </a>
                   </Popover.Group>

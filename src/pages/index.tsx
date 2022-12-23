@@ -1,8 +1,5 @@
 import Head from "next/head";
-
 import { Nav } from "../components/nav";
-
-
 
 const Home = () => {
    return (
@@ -33,7 +30,7 @@ const Home = () => {
                         </p>
                         <div className="mt-8 flex gap-x-4 sm:justify-center">
                            <a
-                              href="#"
+                              href="/chat-bot/routesAndPrices"
                               className="bg-seventh-darkblue inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-sixth-gold hover:bg-indigo-700 md:mx-1 lg:mx-2 hover:ring-indigo-700"
                            >
                               Выбрать квест
@@ -42,7 +39,7 @@ const Home = () => {
                               </span>
                            </a>
                            <a
-                              href="#"
+                              href="/chat-bot/reviews"
                               className="bg-sixth-gold inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-third-brown ring-1 ring-fifth-red md:mx-1 lg:mx-2 hover:ring-gray-900/20"
                            >
                               Почитать отзывы
@@ -81,7 +78,7 @@ const Home = () => {
                      </div>
                      <div className="hidden sm:flex sm:justify-center mt-6">
                         <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-1 px-4 text-base leading-6">
-                           <a href="#" className="font-semibold text-indigo-600">
+                           <a href="/chat-bot/bears" className="font-semibold text-indigo-600">
                               <span className="text-gray-600">
                                  Ещё больше мишек! { } 🧸
                               </span>

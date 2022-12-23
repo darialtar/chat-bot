@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Nav } from "../../components/nav";
 
-const payedQuest = () => {
+const hardQuest2 = () => {
    return (
       <>
          <Head>
@@ -20,7 +20,7 @@ const payedQuest = () => {
                В разработке
                </h1>
                <h2 className="text-xl text-center">
-               Здесь будет робо-чат, с помощью которого можно будет пройти квест
+               Здесь будет информация о будущем Хард-Квесте 2
                </h2>
             </div>
          </main>
@@ -28,4 +28,4 @@ const payedQuest = () => {
    );
 };
 
-export default payedQuest;
+export default hardQuest2;
