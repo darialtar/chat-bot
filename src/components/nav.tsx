@@ -1,12 +1,10 @@
 import { Popover, Transition } from "@headlessui/react"
 import {
-   ChevronDownIcon,
    Bars3Icon,
    XMarkIcon,
    BuildingOffice2Icon,
    ChatBubbleBottomCenterTextIcon,
    MapIcon,
-   PhoneIcon,
    QuestionMarkCircleIcon,
    SparklesIcon,
    StarIcon
