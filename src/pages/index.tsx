@@ -1,5 +1,8 @@
+import { url } from "inspector";
 import Head from "next/head";
 import { Nav } from "../components/nav";
+import back from "./hollowed-boxes.svg";
+
 
 const Home = () => {
    return (
@@ -15,11 +18,13 @@ const Home = () => {
          <Nav></Nav>
 
          <main>
-            <div className="relative px-6 lg:px-8">
-               <div className="mx-auto max-w-4xl pt-4 pb-2 sm:pt-8 sm:pb-4">
+            <div className="relative px-6 lg:px-8" 
+            // style={{ backgroundImage: `url(${back.src})` }}
+            >
+               <div className="mx-auto max-w-4xl pt-4 pb-2 sm:pt-8 sm:pb-14">
                   <div>
                      <div>
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl ">
                            que[ST]eps - городские квесты в Ярославле
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
@@ -77,7 +82,7 @@ const Home = () => {
                         </svg>
                      </div>
                      <div className="hidden sm:flex sm:justify-center mt-6">
-                        <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-1 px-4 text-base leading-6">
+                        <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-1 px-4 text-base leading-6 bg-white">
                            <a href="/chat-bot/bears" className="font-semibold text-indigo-600">
                               <span className="text-gray-600">
                                  Ещё больше мишек! { } 🧸

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Nav } from "../../components/nav";
+import back from "../hollowed-boxes.svg";
 
 const routesAndPrices = () => {
    return (
@@ -15,7 +16,7 @@ const routesAndPrices = () => {
          <Nav></Nav>
 
          <main>
-            <div className="">
+            <div className="" style={{ backgroundImage: `url(${back.src})` }}>
                <h1 className="text-3xl text-center">
                В разработке
                </h1>
