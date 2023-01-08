@@ -13,31 +13,32 @@ import { Fragment } from "react"
 import brodsky from '../pages/brodsky.png'
 import logo from '../pages/bear.png'
 import Image from "next/image";
+import Link from "next/link"
 
 const aboutQuests = [
    {
       name: 'О городских квестах',
       description: 'Выясните, что же такое городские квесты и чем они отличаются от привычных эскейп-румов',
-      href: '/chat-bot',
+      href: '/',
       icon: BuildingOffice2Icon,
    },
    {
       name: 'Маршруты и цены',
       description: 'Определитесь, какой квест вам больше всего подходит',
-      href: '/chat-bot/routesAndPrices',
+      href: '/routesAndPrices',
       icon: MapIcon,
    },
    {
       name: 'Отзывы',
       description: "Ознакомитесь с отзывами клиентов, уже прошедших различные квесты",
-      href: '/chat-bot/reviews',
+      href: '/reviews',
       icon: ChatBubbleBottomCenterTextIcon,
    },
 ]
 const callsToAction = [
    { 
       name: 'Почему вы обижаете Бродского?', 
-      href: '/chat-bot/brodsky', 
+      href: '/brodsky', 
       icon: QuestionMarkCircleIcon 
    },
 ]
@@ -45,20 +46,20 @@ const resources = [
    {
       name: 'Пройти бесплатный квест',
       description: 'Познакомитесь с чат-ботом и интерфейсом прохождения квестов',
-      href: '/chat-bot/freeQuest',
+      href: '/freeQuest',
       icon: StarIcon,
    },
    {
       name: 'Пройти купленный квест',
       description: 'Окунитесь в мир увелкательных и познавательных прогулок по Ярославлю',
-      href: '/chat-bot/payedQuest',
+      href: '/payedQuest',
       icon: SparklesIcon,
    },
 ]
 const update = [
-   { id: 1, name: 'Озвучка всех квестов', href: '/chat-bot/voicing' },
-   { id: 2, name: 'Новый Хард-Квест-2', href: '/chat-bot/hardQuest2' },
-   { id: 3, name: 'Новый Freedom-Квест', href: '/chat-bot/freedomQuest' },
+   { id: 1, name: 'Озвучка всех квестов', href: '/voicing' },
+   { id: 2, name: 'Новый Хард-Квест-2', href: '/hardQuest2' },
+   { id: 3, name: 'Новый Freedom-Квест', href: '/freedomQuest' },
 ]
 
 function classNames(...classes: any[]) {
@@ -71,18 +72,18 @@ export const Nav = () => {
          <div className="h-banner w-full h-full font-bold text-white bg-gradient-to-t from-seventh-darkblue/70 to-seventh-darkblue pointer-events-auto top-0 z-40 overflow-y-hidden">
             <div className="w-full p-2 h-full flex items-center justify-center">
                <span className="pr-4 text-sm sm:text-base">Не слушай Бродского - выходи из комнаты</span>
-               <a href="/chat-bot/brodsky">
+               <Link href="/brodsky">
                   <Image alt="Недовольный Бродский" src={brodsky} className="" width={70} />
-               </a>
+               </Link>
             </div>
          </div>
-         <Popover className="relative bg-white">
+         <Popover className="relative bg-white border-b-2 border-seventh-darkblue">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
-               <div className="flex justify-between items-center py-1 border-b-2 border-black md:space-x-10">
+               <div className="flex justify-between items-center py-1 md:space-x-10">
                   <div className="flex justify-start">
-                     <a href="/chat-bot">
+                     <Link href="/">
                         <Image alt="Рычащий мишка" src={logo} className="" width={80} />
-                     </a>
+                     </Link>
                   </div>
                   <Popover.Group as="nav" className="hidden space-x-10 md:flex">
                      <Popover className="relative">
@@ -146,9 +147,9 @@ export const Nav = () => {
                         )}
                      </Popover>
 
-                     <a href="/chat-bot/buyQuest" className="text-base font-medium text-black hover:text-seventh-darkblue">
+                     <Link href="/buyQuest" className="text-base font-medium text-black hover:text-seventh-darkblue">
                         Купить квест
-                     </a>
+                     </Link>
 
                      <Popover className="relative">
                         {({ open }) => (
@@ -195,9 +196,9 @@ export const Nav = () => {
                                              <ul role="list" className="mt-2 space-y-4">
                                                 {update.map((post) => (
                                                    <li key={post.id} className="truncate text-base">
-                                                      <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
+                                                      <Link href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
                                                          {post.name}
-                                                      </a>
+                                                      </Link>
                                                    </li>
                                                 ))}
                                              </ul>
@@ -210,9 +211,9 @@ export const Nav = () => {
                         )}
                      </Popover>
 
-                     <a href="/chat-bot/bears" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                     <Link href="/bears" className="text-base font-medium text-gray-500 hover:text-gray-900">
                         🧸
-                     </a>
+                     </Link>
                   </Popover.Group>
 
                   <div className=""></div>
@@ -280,15 +281,15 @@ export const Nav = () => {
                         <div>
                            <a
                               href="#"
-                              className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-fouth-orange shadow-sm hover:bg-indigo-700"
+                              className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-seventh-darkblue shadow-sm hover:bg-indigo-700"
                            >
                               Купить квест
                            </a>
                            <p className="mt-6 text-center text-base font-medium text-gray-500">
                               Остались вопросы?{' '}
-                              <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                              <Link href="#" className="text-indigo-600 hover:text-indigo-500">
                                  Связаться
-                              </a>
+                              </Link>
                            </p>
                         </div>
                      </div>

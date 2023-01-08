@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Nav } from "../../components/nav";
-import bearRobo from '../bearRobo.jpg'
+import bearRobo from '../bearRobo.jpg';
+import back2 from "../endless-constellation.svg";
 
 import { trpc } from "../../utils/trpc";
 import { FormEventHandler, useEffect, useState } from "react";
@@ -128,8 +129,9 @@ const FreeQuest = () => {
 
          <Nav></Nav>
 
-         <main className="flex min-h-screen flex-col items-center justify-center bg-white p-10">
-            <div className="flex flex-col flex-grow w-full max-w-4xl bg-seventh-darkblue/10 shadow-xl rounded-lg border-seventh-darkblue/25 border-solid border-2 overflow-hidden">
+         <main className="flex min-h-screen flex-col items-center justify-center p-10"
+         style={{ backgroundImage: `url(${back2.src})` }}>
+            <div className="flex flex-col flex-grow w-full max-w-4xl bg-white shadow-xl rounded-lg border-seventh-darkblue/25 border-solid border-2 overflow-hidden" >
                <div className="flex flex-col flex-grow h-0 p-5 overflow-auto">
                   <div className="flex w-full mt-2 space-x-3 max-w-sm sm:max-w-xl ">
                      <Image alt="Робот-мишка" src={bearRobo} className="flex-shrink-0 h-10 w-10 rounded-full" />
@@ -142,14 +144,12 @@ const FreeQuest = () => {
                      </div>
                   </div>
                </div>
-               <div className="bg-gray-300 p-4">
-                  <input value={value} onChange={ev => setValue(ev.target.value)} onSubmit={onSubmit} className="flex items-center h-10 w-full rounded px-3 text-sm" type="text" placeholder="Напишите ответ робо-мишке…"></input>
+               <div className="px-4">
+                  <input value={value} onChange={ev => setValue(ev.target.value)} onSubmit={onSubmit} className="flex items-center h-10 w-full rounded px-3 border-2 border-seventh-darkblue/25 text-sm" type="text" placeholder="Напишите ответ робо-мишке…"></input>
                </div>
-               <button onClick={sendMessage}>Alala</button>
-               {/* <p className="text-2xl text-white">
-                  {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-               </p> */}
-
+               <div className="p-4 text-center">
+               <button onClick={sendMessage} className="bg-eight-blue text-white font-bold py-2 px-4 border-b-4 border-b-seventh-darkblue rounded">Отправить</button>
+               </div>
             </div>
          </main>
       </>

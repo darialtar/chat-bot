@@ -12,6 +12,7 @@ module.exports = {
          'fifth-red': '#8c0b10',
          'sixth-gold': '#ffbe59',
          'seventh-darkblue': '#00008b',
+         'eight-blue': '#5252FF',
       },
       extend: {
          keyframes: {
