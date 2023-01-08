@@ -28,7 +28,7 @@ const buyQuest = () => {
                            >
                               <rect fill='#487346' 
                               width='200' height='200' />
-                              <g fill-opacity='1'>
+                              <g fillOpacity='1'>
                                  <polygon fill='#4c8e43' 
                                  points='100 57.1 64 93.1 71.5 100.6 100 72.1' />
                                  <polygon fill='#6aac5f' 
