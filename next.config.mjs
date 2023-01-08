@@ -14,7 +14,7 @@ const config = {
 //     locales: ["en"],
 //     defaultLocale: "en",
 //   },
-//   assetPrefix: isProd ? '/chat-bot/' : '',
+  assetPrefix: isProd ? '/chat-bot/' : '',
   images: {
     unoptimized: true,
   },
