@@ -4,7 +4,8 @@ import { Nav } from "../../components/nav";
 import bearRobo from '../bearRobo.jpg'
 
 import { trpc } from "../../utils/trpc";
-import { FormEventHandler, useEffect, useState } from "react";
+import type { FormEventHandler} from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 
 function useInterval(callback: unknown, delay: unknown) {
@@ -55,9 +56,13 @@ const FreeQuest = () => {
    const [value, setValue] = useState<string>('');
 
    const [flag, setFlag] = useState<boolean>(false);
-   trpc.example.hello.useQuery({ text: value }, { 
+   trpc.messaging.message.useQuery({ 
+      accessCode: 'accessCode', 
+      quest: 'free', 
+      text: value
+   }, { 
       onSuccess(data) {
-         appendMessage(data.greeting);
+         appendMessage('yeah');
       },
       onSettled() {
          setValue('');
