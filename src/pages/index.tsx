@@ -4,7 +4,10 @@ import { Nav } from "../components/nav";
 import back from "./hollowed-boxes.svg";
 import back2 from "./endless-constellation.svg";
 import back3 from "./protruding-squares.svg";
+import panda from "./1F43C.svg";
+import darkBear from "./1F43B.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
 
@@ -21,8 +24,8 @@ const Home = () => {
          <Nav></Nav>
 
          <main>
-            <div className="relative px-6 lg:px-8" 
-            style={{ backgroundImage: `url(${back2.src})` }}
+            <div className="relative px-6 lg:px-8"
+               style={{ backgroundImage: `url(${back2.src})` }}
             >
                <div className="mx-auto max-w-4xl pt-4 pb-2 sm:pt-8 sm:pb-14">
                   <div>
@@ -39,11 +42,11 @@ const Home = () => {
                         <div className="mt-8 flex gap-x-4 sm:justify-center">
                            <Link
                               href="/routesAndPrices"
-                              className="bg-seventh-darkblue inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-sixth-gold hover:bg-indigo-700 md:mx-1 lg:mx-2 hover:ring-indigo-700"
+                              className="bg-seventh-darkblue align-bottom rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-sixth-gold md:mx-1 lg:mx-2"
                            >
                               Выбрать квест
-                              <span className="text-indigo-200" aria-hidden="true">
-                                 &nbsp;🐻‍❄️
+                              <span className="inline-block align-bottom">
+                              <Image alt="Панда" src={panda} className="pl-1" width={35} />
                               </span>
                            </Link>
                            <Link
@@ -51,8 +54,8 @@ const Home = () => {
                               className="bg-sixth-gold inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-third-brown ring-1 ring-fifth-red md:mx-1 lg:mx-2 hover:ring-gray-900/20"
                            >
                               Почитать отзывы
-                              <span className="text-gray-400" aria-hidden="true">
-                                 &nbsp;🐻
+                              <span className="inline-block align-bottom">
+                                 <Image alt="Бурый медведь" src={darkBear} className="pl-1" width={35} />
                               </span>
                            </Link>
                         </div>
@@ -61,7 +64,7 @@ const Home = () => {
                      <div className="hidden sm:flex sm:justify-center mt-6">
                         <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-1 px-4 text-base leading-6 bg-white">
                            <Link href="/bears" className="font-semibold text-indigo-600">
-                              <span className="text-gray-600">
+                              <span className="inline-block align-bottom">
                                  Ещё больше мишек! { } 🧸
                               </span>
                            </Link>
