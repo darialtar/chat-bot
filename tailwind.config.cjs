@@ -1,25 +1,42 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const colors = require('tailwindcss/colors');
 module.exports = {
    content: ["./src/**/*.{js,ts,jsx,tsx}"],
    theme: {
       colors: {
-         'white': '#ffffff',
+         transparent: 'transparent',
+         current: 'currentColor',
+         'white': '#FFFFFF',
          'black': '#000000',
-         'first-green': '#336600',
-         'second-green': '#67998d',
-         'third-brown': '#865433',
-         'fouth-orange': '#f27326',
-         'fifth-red': '#8c0b10',
-         'sixth-gold': '#ffbe59',
-         'seventh-darkblue': '#00008b',
-         'eight-blue': '#5252FF',
+         'brown': {
+            100: '#A57939',
+            200: '#A06640',
+            300: '#865433',
+            400: '#6A462F',
+            500: '#4C372A',
+         },
+         'gold': {
+            100: '#FFDFAD',
+            200: '#FFCD80',
+            300: '#ffbe59',
+            400: '#FFA314',
+            500: '#C77900',
+         },
+         'darkblue': {
+            100: '#5C5CFF',
+            200: '#0F0FFF',
+            300: '#0000C2',
+            400: '#00008b',
+            500: '#000061',
+         },
       },
       extend: {
          keyframes: {
             show: {
                '0%': { opacity: 0 },
                '25%': { opacity: 0 },
-               '50%': { opacity: 0.1},
+               '50%': { opacity: 0.1 },
                '100%': { opacity: 1 }
             }
          },
@@ -30,6 +47,6 @@ module.exports = {
             'show-4': 'show 8s'
          }
       },
-   plugins: [],
+      plugins: [],
    },
 };
