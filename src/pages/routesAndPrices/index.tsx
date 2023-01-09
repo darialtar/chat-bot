@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Nav } from "../../components/nav";
-import back from "../hollowed-boxes.svg";
+import back from "../endless-constellation.svg";
 
 const routesAndPrices = () => {
    return (

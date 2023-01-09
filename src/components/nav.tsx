@@ -15,7 +15,7 @@ import logo from '../pages/bear.png';
 import teddyBear from "../pages/1F9F8.svg";
 import tree from "../pages/1F332.svg";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
 const aboutQuests = [
    {
