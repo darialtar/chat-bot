@@ -9,9 +9,11 @@ import {
    SparklesIcon,
    StarIcon
 } from "@heroicons/react/24/outline"
-import { Fragment } from "react"
-import brodsky from '../pages/brodsky.png'
-import logo from '../pages/bear.png'
+import { Fragment } from "react";
+import brodsky from '../pages/brodsky.png';
+import logo from '../pages/bear.png';
+import teddyBear from "../pages/1F9F8.svg";
+import tree from "../pages/1F332.svg";
 import Image from "next/image";
 import Link from "next/link"
 
@@ -97,7 +99,9 @@ export const Nav = () => {
                                  )}
                               >
                                  <span className="">О квестах</span>
-                                 <span className="transition ease-in-out delay-100 hover:rotate-180 duration-200 rotatable ml-1 h-6 w-5">🌲</span>
+                                 <span className="transition ease-in-out delay-100 hover:rotate-180 duration-200 rotatable ml-1 h-6 w-5">
+                                 <Image alt="Ель" src={tree}/>
+                                 </span>
                               </Popover.Button>
 
                               <Transition
@@ -161,7 +165,9 @@ export const Nav = () => {
                                  )}
                               >
                                  <span className="">Пройти квест</span>
-                                 <span className="transition ease-in-out delay-100 hover:rotate-180 rotatable stayrotate ml-0.5 h-6 w-5">🌲</span>
+                                 <span className="transition ease-in-out delay-100 hover:rotate-180 rotatable stayrotate ml-0.5 h-6 w-5">
+                                 <Image alt="Ель" src={tree}/>
+                                 </span>
                               </Popover.Button>
 
                               <Transition
@@ -212,7 +218,7 @@ export const Nav = () => {
                      </Popover>
 
                      <Link href="/bears" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                        🧸
+                     <Image alt="Медвежонок" src={teddyBear} className="" width={24} />
                      </Link>
                   </Popover.Group>
 

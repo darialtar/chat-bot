@@ -1,8 +1,3 @@
-.font-link {
-   font-family: 'Noto Color Emoji';
-   src: url('../../public/NotoColorEmoji-Regular.ttf');
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

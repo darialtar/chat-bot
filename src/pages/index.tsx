@@ -1,11 +1,12 @@
 import { url } from "inspector";
 import Head from "next/head";
 import { Nav } from "../components/nav";
-import back from "./hollowed-boxes.svg";
-import back2 from "./endless-constellation.svg";
-import back3 from "./protruding-squares.svg";
+
+import back from "./endless-constellation.svg";
 import panda from "./1F43C.svg";
 import darkBear from "./1F43B.svg";
+import teddyBear from "./1F9F8.svg";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -25,7 +26,7 @@ const Home = () => {
 
          <main>
             <div className="relative px-6 lg:px-8"
-               style={{ backgroundImage: `url(${back2.src})` }}
+               style={{ backgroundImage: `url(${back.src})` }}
             >
                <div className="mx-auto max-w-4xl pt-4 pb-2 sm:pt-8 sm:pb-14">
                   <div>
@@ -61,11 +62,12 @@ const Home = () => {
                         </div>
                      </div>
 
-                     <div className="hidden sm:flex sm:justify-center mt-6">
-                        <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-1 px-4 text-base leading-6 bg-white">
-                           <Link href="/bears" className="font-semibold text-indigo-600">
+                     <div className="hidden sm:flex sm:justify-center mt-5">
+                        <div className="relative overflow-hidden border-dotted border-2 border-seventh-darkblue py-0.5 px-4 text-base leading-7 bg-white">
+                           <Link href="/bears" className="font-semibold align-middle">
+                              Ещё больше мишек!
                               <span className="inline-block align-bottom">
-                                 Ещё больше мишек! { } 🧸
+                                 <Image alt="Медвежонок" src={teddyBear} className="pl-1 pb-0.5" width={33} />
                               </span>
                            </Link>
                         </div>
