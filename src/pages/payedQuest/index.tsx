@@ -19,12 +19,12 @@ const payedQuest = () => {
 
          <main className="flex min-h-screen flex-col items-center justify-center p-10"
          style={{ backgroundImage: `url(${back2.src})` }}>
-            <div className="flex flex-col flex-grow w-full max-w-4xl bg-white shadow-xl rounded-lg border-seventh-darkblue/25 border-solid border-2 overflow-hidden">
+            <div className="flex flex-col flex-grow w-full max-w-4xl bg-white shadow-xl rounded-lg border-darkblue-400/25 border-solid border-2 overflow-hidden">
                <div className="flex flex-col flex-grow h-0 p-5 overflow-auto">
                   <div className="flex w-full mt-2 space-x-3 max-w-sm sm:max-w-xl ">
                      <Image alt="Робот-мишка" src={bearRobo} className="flex-shrink-0 h-10 w-10 rounded-full" />
                      <div>
-                        <div className="bg-seventh-darkblue p-3 rounded-r-lg rounded-bl-lg mb-2 animate-show">
+                        <div className="bg-darkblue-400 p-3 rounded-r-lg rounded-bl-lg mb-2 animate-show">
                            <p className="text-sm text-white">
                                Введите ваш промокод, чтобы начать квест.</p>
                         </div>
@@ -32,10 +32,10 @@ const payedQuest = () => {
                   </div>
                </div>
                <div className="px-4">
-                  <input className="flex items-center h-10 w-full rounded px-3 text-sm border-2 border-seventh-darkblue/25" type="text" placeholder="Напишите ответ робо-мишке…"></input>
+                  <input className="flex items-center h-10 w-full rounded px-3 text-sm border-2 border-darkblue-400/25" type="text" placeholder="Напишите ответ робо-мишке…"></input>
                </div>
                <div className="p-4 text-center">
-               <button className="bg-eight-blue text-white font-bold py-2 px-4 border-b-4 border-b-seventh-darkblue rounded">Отправить</button>
+               <button className="bg-eight-blue text-white font-bold py-2 px-4 border-b-4 border-b-darkblue-400 rounded">Отправить</button>
                </div>
             </div>
          </main>

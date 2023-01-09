@@ -71,7 +71,7 @@ function classNames(...classes: any[]) {
 export const Nav = () => {
    return (
       <div>
-         <div className="h-banner w-full h-full font-bold text-white bg-gradient-to-t from-seventh-darkblue/70 to-seventh-darkblue pointer-events-auto top-0 z-40 overflow-y-hidden">
+         <div className="h-banner w-full h-full font-bold text-white bg-gradient-to-t from-darkblue-400/70 to-darkblue-400 pointer-events-auto top-0 z-40 overflow-y-hidden">
             <div className="w-full p-2 h-full flex items-center justify-center">
                <span className="pr-4 text-sm sm:text-base">Не слушай Бродского - выходи из комнаты</span>
                <Link href="/brodsky">
@@ -79,7 +79,7 @@ export const Nav = () => {
                </Link>
             </div>
          </div>
-         <Popover className="relative bg-white border-b-2 border-seventh-darkblue">
+         <Popover className="relative bg-white border-b-2 border-darkblue-400">
             <div className="mx-auto max-w-7xl px-4 sm:px-6">
                <div className="flex justify-between items-center py-1 md:space-x-10">
                   <div className="flex justify-start">
@@ -95,7 +95,7 @@ export const Nav = () => {
 
                                  className={classNames(
                                     open ? 'text-gray-900' : 'text-black',
-                                    'group inline-flex items-center rounded-md bg-white text-base font-medium focus:outline-none hover:text-seventh-darkblue'
+                                    'group inline-flex items-center rounded-md bg-white text-base font-medium focus:outline-none hover:text-darkblue-400'
                                  )}
                               >
                                  <span className="">О квестах</span>
@@ -131,7 +131,7 @@ export const Nav = () => {
                                              </a>
                                           ))}
                                        </div>
-                                       <div className="space-y-6 bg-seventh-darkblue text-white px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                                       <div className="space-y-6 bg-darkblue-400 text-white px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                                           {callsToAction.map((item) => (
                                              <div key={item.name} className="flow-root">
                                                 <a
@@ -151,7 +151,7 @@ export const Nav = () => {
                         )}
                      </Popover>
 
-                     <Link href="/buyQuest" className="text-base font-medium text-black hover:text-seventh-darkblue">
+                     <Link href="/buyQuest" className="text-base font-medium text-black hover:text-darkblue-400">
                         Купить квест
                      </Link>
 
@@ -161,7 +161,7 @@ export const Nav = () => {
                               <Popover.Button
                                  className={classNames(
                                     open ? 'text-gray-900' : 'text-black',
-                                    'group inline-flex items-center rounded-md bg-white text-base font-medium focus:outline-none hover:text-seventh-darkblue'
+                                    'group inline-flex items-center rounded-md bg-white text-base font-medium focus:outline-none hover:text-darkblue-400'
                                  )}
                               >
                                  <span className="">Пройти квест</span>
@@ -196,7 +196,7 @@ export const Nav = () => {
                                              </a>
                                           ))}
                                        </div>
-                                       <div className="bg-seventh-darkblue text-white sm:px-8 sm:py-4">
+                                       <div className="bg-darkblue-400 text-white sm:px-8 sm:py-4">
                                           <div>
                                              <h3 className="underline decoration-dotted underline-offset-2 text-base font-medium">Запланированные обновления</h3>
                                              <ul role="list" className="mt-2 space-y-4">
@@ -287,7 +287,7 @@ export const Nav = () => {
                         <div>
                            <a
                               href="#"
-                              className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-seventh-darkblue shadow-sm hover:bg-indigo-700"
+                              className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-darkblue-400 shadow-sm hover:bg-indigo-700"
                            >
                               Купить квест
                            </a>
