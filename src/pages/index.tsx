@@ -34,7 +34,7 @@ const Home = () => {
                style={{ backgroundImage: `url(${back.src})` }}
             >
                <div className="mx-auto max-w-full sm:pb-36 sm: lg:pt-8">
-                  <div className="bg-darkblue-400 rounded-sm border-solid mt-0 flex text-white flex-col md:flex-row ">
+                  <div className="bg-darkblue-600 rounded-sm border-solid mt-0 flex text-darkblue-400 flex-col md:flex-row ">
                      <div className="basis-1/2 md:basis-7/12 lg:basis-7/12 flex lg:items-center">
                         <Image alt="Ярославль" src={yaroslavl} className="md:object-cover object-bottom" />
                      </div>
