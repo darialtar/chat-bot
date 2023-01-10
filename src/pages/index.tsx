@@ -30,27 +30,27 @@ const Home = () => {
          <Nav></Nav>
 
          <main>
-            <div className="relative sm:px-0 lg:px-8"
+            <div className="relative md:p-2 lg:px-8"
                style={{ backgroundImage: `url(${back.src})` }}
             >
-               <div className="mx-auto max-w-full lg:pt-8 sm:pb-36">
+               <div className="mx-auto max-w-full sm:pb-36 sm: lg:pt-8">
                   <div className="bg-darkblue-400 rounded-sm border-solid mt-0 flex text-white flex-col md:flex-row ">
                      <div className="basis-1/2 md:basis-7/12 lg:basis-7/12 flex lg:items-center">
                         <Image alt="Ярославль" src={yaroslavl} className="md:object-cover object-bottom" />
                      </div>
-                     <div className="basis-1/2 text-center p-2 md:basis-5/12 md:p-1.5 lg:basis-5/12 lg:p-4">
+                     <div className="basis-1/2 text-center p-2 md:basis-5/12 lg:basis-5/12 lg:p-4">
                         <p className="text-lg">
-                           <p className="text-center font-bold text-xl">
+                           <p className="text-center font-bold md:text-lg lg:text-xl ">
                            В чем особенности наших квестов? Давайте разберёмся!
                            </p>
-                           <ul className="space-y-1 text-left py-3 md:py-1.5">
+                           <ul className="space-y-1 text-left py-3 md:py-1.5 md:text-base lg:text-lg">
                               <li className="flex items-center">
                                  <CheckBadgeIcon className="h-8 w-8 flex-shrink-0 text-white" />
                                  <p className="ml-2">
                                     4 увлекательных сценария,
                                  </p>
                               </li>
-                              <p className="text-xs text-right">
+                              <p className="text-right text-xs lg:text-sm">
                                  если сложно выбрать - тест&nbsp;
                                  <Link href="/routesAndPrices" className="italic">&quot;Какой квест вам подходит&quot;</Link>
                               </p>
@@ -60,12 +60,12 @@ const Home = () => {
                                     От 1 до 3 часов путешествия,
                                  </p>
                               </li>
-                              <p className="text-xs text-right">но можно растянуть и на подольше</p>
+                              <p className="text-right text-xs lg:text-sm">но можно растянуть и на подольше</p>
                               <li className="flex items-center">
                                  <CheckBadgeIcon className="h-8 w-8 flex-shrink-0 text-white" />
                                  <p className="ml-2">Большое количество шуток и познавательной информации,</p>
                               </li>
-                              <p className="text-xs text-right">у нас даже есть мемы</p>
+                              <p className="text-right text-xs lg:text-sm">у нас даже есть мемы</p>
                               <li className="flex items-center">
                                  <CheckBadgeIcon className="h-8 w-8 flex-shrink-0 text-white" />
                                  <p className="ml-2">Нужен только телефон и готовность к приключениям!</p>
@@ -73,7 +73,7 @@ const Home = () => {
                            </ul>
                         </p>
                         <button className="bg-gold-300 font-bold py-2 px-4 border-b-4 border-b-gold-500 rounded text-darkblue-400">Уже готов купить за 800 рублей</button>
-                        <p className="text-sm">цена для компании от 1 до 8 человек</p>
+                        <p className="md:text-xs lg:text-sm pt-1">цена для компании от 1 до 8 человек</p>
                      </div>
                   </div>
 
