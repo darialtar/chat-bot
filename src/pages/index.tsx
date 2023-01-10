@@ -35,13 +35,13 @@ const Home = () => {
                style={{ backgroundImage: `url(${back.src})` }}
             >
                <div className="mx-auto max-w-full pt-4 pb-2 sm:pt-8 sm:pb-36">
-                  <div className="bg-darkblue-400 rounded-sm border-solid mt-2 flex text-white flex-col lg:flex-row">
-                     <div className="grow basis-48">
+                  <div className="bg-darkblue-400 rounded-sm border-solid mt-2 flex text-white flex-col md:flex-row">
+                     <div className="basis-1/2 md: lg:basis-7/12">
                         <Image alt="Ярославль" src={yaroslavl} className="" />
                      </div>
-                     <div className="grow basis-48 text-center p-4">
+                     <div className="basis-1/2 text-center p-2 lg:p-4 lg:basis-5/12">
                         <p className="text-lg">
-                           <p className="text-center">
+                           <p className="text-center font-bold text-xl">
                            В чем особенности наших квестов? Давайте разберёмся!
                            </p>
                            <ul className="space-y-1 text-left py-3">
@@ -52,7 +52,8 @@ const Home = () => {
                                  </p>
                               </li>
                               <p className="text-xs text-right">
-                                 если сложно выбрать - тест &quot;Какой квест вам больше подходит&quot;
+                                 если сложно выбрать - тест&nbsp;
+                                 <Link href="/routesAndPrices" className="italic">&quot;Какой квест вам больше подходит&quot;</Link>
                               </p>
                               <li className="flex items-center">
                                  <CheckBadgeIcon className="h-8 w-8 flex-shrink-0 text-white" />
