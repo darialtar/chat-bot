@@ -7,7 +7,6 @@ import yaroslavl from "./yaroslavl.png";
 import panda from "./1F43C.svg";
 import darkBear from "./1F43B.svg";
 import teddyBear from "./1F9F8.svg";
-import checkMark from "./2705.svg";
 
 import {
    CheckBadgeIcon,
@@ -31,20 +30,20 @@ const Home = () => {
          <Nav></Nav>
 
          <main>
-            <div className="relative px-6 lg:px-8"
+            <div className="relative sm:px-0 lg:px-8"
                style={{ backgroundImage: `url(${back.src})` }}
             >
-               <div className="mx-auto max-w-full pt-4 pb-2 sm:pt-8 sm:pb-36">
-                  <div className="bg-darkblue-400 rounded-sm border-solid mt-2 flex text-white flex-col md:flex-row">
-                     <div className="basis-1/2 md: lg:basis-7/12">
-                        <Image alt="Ярославль" src={yaroslavl} className="" />
+               <div className="mx-auto max-w-full lg:pt-8 sm:pb-36">
+                  <div className="bg-darkblue-400 rounded-sm border-solid mt-0 flex text-white flex-col md:flex-row ">
+                     <div className="basis-1/2 md:basis-7/12 lg:basis-7/12 flex lg:items-center">
+                        <Image alt="Ярославль" src={yaroslavl} className="md:object-cover object-bottom" />
                      </div>
-                     <div className="basis-1/2 text-center p-2 lg:p-4 lg:basis-5/12">
+                     <div className="basis-1/2 text-center p-2 md:basis-5/12 md:p-1.5 lg:basis-5/12 lg:p-4">
                         <p className="text-lg">
                            <p className="text-center font-bold text-xl">
                            В чем особенности наших квестов? Давайте разберёмся!
                            </p>
-                           <ul className="space-y-1 text-left py-3">
+                           <ul className="space-y-1 text-left py-3 md:py-1.5">
                               <li className="flex items-center">
                                  <CheckBadgeIcon className="h-8 w-8 flex-shrink-0 text-white" />
                                  <p className="ml-2">
@@ -53,7 +52,7 @@ const Home = () => {
                               </li>
                               <p className="text-xs text-right">
                                  если сложно выбрать - тест&nbsp;
-                                 <Link href="/routesAndPrices" className="italic">&quot;Какой квест вам больше подходит&quot;</Link>
+                                 <Link href="/routesAndPrices" className="italic">&quot;Какой квест вам подходит&quot;</Link>
                               </p>
                               <li className="flex items-center">
                                  <CheckBadgeIcon className="h-8 w-8 flex-shrink-0 text-white" />
