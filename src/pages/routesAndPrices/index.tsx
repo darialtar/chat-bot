@@ -23,8 +23,12 @@ const routesAndPrices = () => {
             <div className="relative p-10"
                style={{ backgroundImage: `url(${back.src})` }}>
                <div className="">
-
-
+                  <h1 className="text-3xl text-center">
+                     В разработке
+                  </h1>
+                  <h2 className="text-xl text-center">
+                     Здесь будет информация о маршрутах и ценах
+                  </h2>
                </div>
             </div>
          </main>

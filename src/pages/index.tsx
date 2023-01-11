@@ -13,6 +13,9 @@ import teddyBear from "./1F9F8.svg";
 import customer1 from "./rev1.jpg";
 import customer2 from "./rev2.jpg";
 import customer3 from "./rev3.jpg";
+import memBear from "./memBear.png";
+import memHard from "./memHard.png";
+import memStone from "./memStone.png";
 
 import {
    CheckBadgeIcon,
@@ -23,23 +26,29 @@ import Image from "next/image";
 import Script from "next/script";
 
 const products = [
-   { 
+   {
       id: 'Item1',
-      href: '/routesAndPrices', 
-      imageSrc: '/routesAndPrices', 
+      href: '/routesAndPrices',
+      imageSrc: memBear,
       imageAlt: 'Мем с мишкой',
+      name: 'Квест-Медведь',
+      price: '800р',
    },
-   { 
+   {
       id: 'Item2',
-      href: '/routesAndPrices', 
-      imageSrc: '/routesAndPrices', 
+      href: '/routesAndPrices',
+      imageSrc: memHard,
       imageAlt: 'Мем с Сталоне',
+      name: 'Хард-Квест',
+      price: '800р',
    },
-   { 
+   {
       id: 'Item3',
-      href: '/routesAndPrices', 
-      imageSrc: '/routesAndPrices', 
+      href: '/routesAndPrices',
+      imageSrc: memStone,
       imageAlt: 'Мем с памятниками',
+      name: 'Памятный Квест',
+      price: '800р',
    },
 ]
 
@@ -128,8 +137,27 @@ const Home = () => {
                   </div>
 
                   <div>
-                     Картинки
+                     <div className="mx-auto max-w-2xl py-16 px-4 sm:py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+                        <h2 className="sr-only">Products</h2>
 
+                        <div className="grid grid-cols-1 gap-y-10 gap-x-6 lg:grid-cols-3">
+                           {products.map((product) => (
+                              <a key={product.id} href={product.href} className="group">
+                                 <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+                                    <Image
+                                       src={product.imageSrc}
+                                       alt={product.imageAlt}
+                                       width={80}
+                                       height={80}
+                                       className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                    />
+                                 </div>
+                                 <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                                 <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                              </a>
+                           ))}
+                        </div>
+                     </div>
                   </div>
 
                   <div>
@@ -150,7 +178,7 @@ const Home = () => {
                                  />
                               </div>
                               <h5 className="text-xl font-semibold mb-4">Даша Гаврилова</h5>
-                              <h6 className="font-semibold text-darkblue-100 mb-4">Проходила Квест-Медведь</h6>
+                              <h6 className="font-semibold text-darkblue-100 mb-4">Квест-Медведь</h6>
                               <p className="mb-4">
                                  <svg
                                     aria-hidden="true"
@@ -230,7 +258,6 @@ const Home = () => {
                         </div>
                      </section>
                   </div>
-
 
 
                   <div className="mt-8 flex gap-x-4 sm:justify-center">
