@@ -2,7 +2,7 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require('tailwindcss/colors');
 module.exports = {
-   content: ["./src/**/*.{js,ts,jsx,tsx}"],
+   content: ["./src/**/*.{js,jsx,ts,tsx}", './index.html', './node_modules/tw-elements/dist/js/**/*.{js,ts,jsx,tsx}', 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
    theme: {
       colors: {
          transparent: 'transparent',
@@ -49,6 +49,9 @@ module.exports = {
             'show-4': 'show 8s'
          }
       },
-      plugins: [],
+      plugins: [
+         require('tw-elements/dist/plugin'),
+         require('flowbite/plugin')
+      ],
    },
 };
