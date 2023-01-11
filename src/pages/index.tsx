@@ -22,6 +22,27 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 
+const products = [
+   { 
+      id: 'Item1',
+      href: '/routesAndPrices', 
+      imageSrc: '/routesAndPrices', 
+      imageAlt: 'Мем с мишкой',
+   },
+   { 
+      id: 'Item2',
+      href: '/routesAndPrices', 
+      imageSrc: '/routesAndPrices', 
+      imageAlt: 'Мем с Сталоне',
+   },
+   { 
+      id: 'Item3',
+      href: '/routesAndPrices', 
+      imageSrc: '/routesAndPrices', 
+      imageAlt: 'Мем с памятниками',
+   },
+]
+
 const Home = () => {
 
    return (
@@ -169,7 +190,7 @@ const Home = () => {
                                     focusable="false"
                                     data-prefix="fas"
                                     data-icon="quote-left"
-                                    class="w-6 pr-2 inline-block"
+                                    className="w-6 pr-2 inline-block"
                                     role="img"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 512 512"
