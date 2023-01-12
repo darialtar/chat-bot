@@ -152,8 +152,10 @@ const Home = () => {
                                        className="h-full w-full object-cover object-center group-hover:opacity-75"
                                     />
                                  </div>
-                                 <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                                 <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                                 <div className="flex justify-between items-center">
+                                 <h3 className="text-lg bg-white p-1 rounded-lg">{product.name}</h3>
+                                 <p className="text-lg font-medium bg-white p-1 rounded-lg">{product.price}</p>
+                                 </div>
                               </a>
                            ))}
                         </div>
@@ -165,7 +167,7 @@ const Home = () => {
                         <div className="text-center bg-white md:max-w-xl lg:max-w-3xl mx-auto">
                            <h3 className="text-3xl font-bold mb-6 text-gray-800">Отзывы</h3>
                            <p className="mb-6 pb-2 md:mb-12 md:pb-0">
-                              Краткий обзор трех последних отзывов от наших клиентов. Если хотите почитать все отзывы - <Link href="/reviews" className="text-darkblue-300">переходите по ссылке</Link>.
+                              Краткий обзор трех отзывов от наших клиентов. Если хотите почитать все отзывы - <Link href="/reviews" className="text-darkblue-300">переходите по ссылке</Link>.
                            </p>
                         </div>
 
@@ -178,7 +180,7 @@ const Home = () => {
                                  />
                               </div>
                               <h5 className="text-xl font-semibold mb-4">Даша Гаврилова</h5>
-                              <h6 className="font-semibold text-darkblue-100 mb-4">Квест-Медведь</h6>
+                              <h6 className="font-semibold text-darkblue-100 mb-4">Квест-Медвед</h6>
                               <p className="mb-4">
                                  <svg
                                     aria-hidden="true"
@@ -237,7 +239,7 @@ const Home = () => {
                                  />
                               </div>
                               <h5 className="text-xl font-semibold mb-4">Анна Володина</h5>
-                              <h6 className="font-semibold text-darkblue-100 mb-4">Квест-медведь</h6>
+                              <h6 className="font-semibold text-darkblue-100 mb-4">Квест-Медвед</h6>
                               <p className="mb-4">
                                  <svg
                                     aria-hidden="true"
@@ -257,6 +259,10 @@ const Home = () => {
                            </div>
                         </div>
                      </section>
+                  </div>
+
+                  <div>
+
                   </div>
 
 
