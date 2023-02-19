@@ -15,3 +15,13 @@ model Example {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Message {
+  id        String   @id @default(cuid())
+  text      String
+  code      String
+  quest     String
+  author    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

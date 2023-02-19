@@ -1,10 +1,6 @@
 import Head from "next/head";
 import { Nav } from "../../components/nav";
 import back from "../endless-constellation.svg";
-import yaroslavl from "../yaroslavl.png";
-
-import Image from "next/image";
-import Link from "next/link";
 
 const routesAndPrices = () => {
    return (
